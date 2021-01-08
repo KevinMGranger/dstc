@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rm dist/*",
     "start": "parcel src/index.html",
-    "build-prod": "parcel build src/index.html",
+    "prebuild-prod": "rm dist/*",
+    "build-prod": "parcel build src/index.html --public-url=/dstc/",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
