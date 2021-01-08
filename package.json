@@ -10,7 +10,7 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "publish": "gh-pages -d dist"
+    "pages": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource/roboto": "^4.0.0",
