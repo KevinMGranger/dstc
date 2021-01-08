@@ -1,7 +1,7 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
-import { byName, Nutrients, Plant } from "../domain/plant";
-import { Container, Grid } from "@material-ui/core";
+import { Container } from "@material-ui/core";
+import React, { Dispatch, SetStateAction } from "react";
 import { useImmer } from "use-immer";
+import { byName, Plant } from "../domain/plant";
 import { mapStateLens, updaterToSetState } from "../utils";
 import Outputs from "./Outputs";
 import PlantList from "./PlantList";
@@ -18,7 +18,8 @@ export default function CalculatorView({ plants }: { plants: Plant[] }) {
     const [current, updater] = mapStateLens(
       plantQuantities,
       setPlantQuantities,
-      plantName
+      plantName,
+      0
     );
     const setter = updaterToSetState(updater);
     return [current, setter];

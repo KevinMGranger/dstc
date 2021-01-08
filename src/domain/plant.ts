@@ -1,5 +1,5 @@
 import { Either } from 'purify-ts'
-import { Codec, GetType, string, enumeration, number, array } from 'purify-ts/Codec'
+import { array, Codec, enumeration, GetType, number, string } from 'purify-ts/Codec'
 
 enum Season {
     Fall = "fall",

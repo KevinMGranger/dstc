@@ -1,19 +1,19 @@
 import { parsePlants, byName } from "./plant";
 
-const { contributions } = require('./calculations')
+import { contributions } from './calculations';
 
 const data = require('./plants.json')
 
 const plants = parsePlants(data).unsafeCoerce();
-const byName = byName(plants)
+const plantsByName = byName(plants)
 
-test('it work', () => {
+test('it adds quantities of plants correctly', () => {
     const inventory = Object.fromEntries([
         ["Carrot", 1],
         ["Corn", 2]
     ]);
 
-    const result = contributions(byName, inventory);
+    const result = contributions(plantsByName, inventory);
 
     expect(result).toEqual({
         formula: 0,

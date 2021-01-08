@@ -1,7 +1,7 @@
-import React from "react";
-import { Plant } from "../domain/plant";
-import { pipe } from "remeda";
 import { Grid, TextField } from "@material-ui/core";
+import React from "react";
+import { pipe } from "remeda";
+import { Plant } from "../domain/plant";
 
 export default function PlantRow({
   plant,
