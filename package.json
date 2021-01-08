@@ -1,0 +1,42 @@
+{
+  "name": "dstc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html",
+    "test": "jest",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^4.0.0",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "immer": "^8.0.0",
+    "purify-ts": "^0.16.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "remeda": "^0.0.27",
+    "use-immer": "^0.4.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/react": "^6.1.11",
+    "@types/jest": "^26.0.19",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "babel-loader": "^8.2.2",
+    "jest": "^26.6.3",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1",
+    "sb": "^6.1.11",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3"
+  }
+}

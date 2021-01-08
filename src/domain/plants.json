@@ -1,0 +1,176 @@
+[
+    {
+        "name": "Carrot",
+        "seed": "Oblong Seeds",
+        "seasons": [
+            "fall",
+            "winter",
+            "spring"
+        ],
+        "formula": -4,
+        "compost": 2,
+        "manure": 2,
+        "water": 0.75
+    },
+    {
+        "name": "Corn",
+        "seed": "Clustered Seeds",
+        "seasons": [
+            "fall",
+            "spring",
+            "summer"
+        ],
+        "formula": 2,
+        "compost": -4,
+        "manure": 2,
+        "water": 0.75
+    },
+    {
+        "name": "Potato",
+        "seed": "Fluffy Seeds",
+        "seasons": [
+            "fall",
+            "winter",
+            "spring"
+        ],
+        "formula": 2,
+        "compost": 2,
+        "manure": -4,
+        "water": 0.75
+    },
+    {
+        "name": "Toma Root",
+        "seed": "Spiky Seeds",
+        "seasons": [
+            "fall",
+            "spring",
+            "summer"
+        ],
+        "formula": -2,
+        "compost": -2,
+        "manure": 4,
+        "water": 3.5
+    },
+    {
+        "name": "Asparagus",
+        "seed": "Tubular Seeds",
+        "seasons": [
+            "winter",
+            "spring"
+        ],
+        "formula": 2,
+        "compost": -4,
+        "manure": 2,
+        "water": 0.75
+    },
+    {
+        "name": "Eggplant",
+        "seed": "Swirly Seeds",
+        "seasons": [
+            "fall",
+            "spring"
+        ],
+        "formula": 2,
+        "compost": 2,
+        "manure": -4,
+        "water": 2
+    },
+    {
+        "name": "Pumpkin",
+        "seed": "Sharp Seeds",
+        "seasons": [
+            "fall",
+            "winter"
+        ],
+        "formula": -4,
+        "compost": 2,
+        "manure": 2,
+        "water": 2
+    },
+    {
+        "name": "Watermelon",
+        "seed": "Square Seeds",
+        "seasons": [
+            "spring",
+            "summer"
+        ],
+        "formula": 4,
+        "compost": -2,
+        "manure": -2,
+        "water": 3.5
+    },
+    {
+        "name": "Dragon Fruit",
+        "seed": "Bulbous Seeds",
+        "seasons": [
+            "spring",
+            "summer"
+        ],
+        "formula": 4,
+        "compost": 4,
+        "manure": -8,
+        "water": 2
+    },
+    {
+        "name": "Durian",
+        "seed": "Brittle Seed Pods",
+        "seasons": [
+            "spring"
+        ],
+        "formula": 4,
+        "compost": -8,
+        "manure": 4,
+        "water": 0.75
+    },
+    {
+        "name": "Garlic",
+        "seed": "Seed Pods",
+        "seasons": [
+            "fall",
+            "winter",
+            "spring",
+            "summer"
+        ],
+        "formula": 4,
+        "compost": -8,
+        "manure": 4,
+        "water": 0.75
+    },
+    {
+        "name": "Onion",
+        "seed": "Pointy Seeds",
+        "seasons": [
+            "fall",
+            "spring",
+            "summer"
+        ],
+        "formula": -8,
+        "compost": 4,
+        "manure": 4,
+        "water": 2
+    },
+    {
+        "name": "Pepper",
+        "seed": "Lumpy Seeds",
+        "seasons": [
+            "fall",
+            "summer"
+        ],
+        "formula": 4,
+        "compost": 4,
+        "manure": -8,
+        "water": 0.75
+    },
+    {
+        "name": "Pomegranate",
+        "seed": "Windblown Seeds",
+        "seasons": [
+            "spring",
+            "summer"
+        ],
+        "formula": -8,
+        "compost": 4,
+        "manure": 4,
+        "water": 2
+    }
+]
