@@ -24,4 +24,4 @@ export default function Stepper({
       <Button onClick={() => set(value + 1)}>+</Button>
     </ButtonGroup>
   );
-}Î
+}
