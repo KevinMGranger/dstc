@@ -13,9 +13,7 @@ export default function Outputs({
 }) {
   const amounts = contributions(plantsByName, quantities);
   return (
-    <Grid container>
-      <Grid item xs={4} />
-      <Grid container item xs={4}>
+      <Grid container>
         {["formula", "compost", "manure", "water"].map((nutrient) => (
           <Grid container item xs={3}>
             <Grid item xs={12}>
@@ -27,7 +25,5 @@ export default function Outputs({
           </Grid>
         ))}
       </Grid>
-      <Grid item xs={4} />
-    </Grid>
   );
 }

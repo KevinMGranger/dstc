@@ -5,12 +5,13 @@ import { byName, Plant } from "../domain/plant";
 import { mapStateLens, updaterToSetState } from "../utils";
 import Outputs from "./Outputs";
 import PlantList from "./PlantList";
+import TopRow from "./TopRow";
 
 export default function CalculatorView({ plants }: { plants: Plant[] }) {
   const plantsByName = byName(plants);
-  const [plantQuantities, setPlantQuantities] = useImmer(
-    () => new Map(plants.map((plant) => [plant.name, 0]))
-  );
+  const freshMap = () => new Map(plants.map((plant) => [plant.name, 0]));
+  const [plantQuantities, setPlantQuantities] = useImmer(freshMap);
+  const reset = () => setPlantQuantities(freshMap);
 
   function forPlant(
     plantName: string
@@ -27,10 +28,7 @@ export default function CalculatorView({ plants }: { plants: Plant[] }) {
 
   return (
     <Container>
-      <Outputs
-        plantsByName={plantsByName}
-        quantities={plantQuantities}
-      ></Outputs>
+      <TopRow plantsByName={plantsByName} quantities={plantQuantities} reset={reset}/>
       <PlantList {...{ plants, forPlant }}></PlantList>
     </Container>
   );
