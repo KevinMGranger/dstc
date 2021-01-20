@@ -1,5 +1,5 @@
-import { Grid } from "@material-ui/core";
-import React from "react";
+import { Box, Grid } from "@material-ui/core";
+import React, { Fragment } from "react";
 import { contributions } from "../domain/calculations";
 import { Nutrients, Plant } from "../domain/plant";
 import { Mapping } from "../utils";
@@ -14,16 +14,20 @@ export default function Outputs({
   const amounts = contributions(plantsByName, quantities);
   return (
     <Grid container>
-      {["formula", "compost", "manure", "water"].map((nutrient) => (
-        <Grid container item xs={3}>
-          <Grid item xs={12}>
-            {nutrient}
+      <Grid item xs={4} />
+      <Grid container item xs={4}>
+        {["formula", "compost", "manure", "water"].map((nutrient) => (
+          <Grid container item xs={3}>
+            <Grid item xs={12}>
+              {nutrient}
+            </Grid>
+            <Grid item xs={12}>
+              {amounts[nutrient as keyof Nutrients]}
+            </Grid>
           </Grid>
-          <Grid item xs={12}>
-            {amounts[nutrient as keyof Nutrients]}
-          </Grid>
-        </Grid>
-      ))}
+        ))}
+      </Grid>
+      <Grid item xs={4} />
     </Grid>
   );
 }
